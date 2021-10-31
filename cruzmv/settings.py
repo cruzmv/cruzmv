@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'cruzmv',
         'USER': 'cruzmv',
         'PASSWORD': 'cruzmv',
-        'HOST': 'localhost',
+        'HOST': 'ec2-18-189-253-225.us-east-2.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
