@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-b_idezo+)7th%m!3v2s5p%fm%tyg&6s96c$7*e#jgxsp+v1j2&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-18-189-253-225.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['ec2-18-189-253-225.us-east-2.compute.amazonaws.com',
+                 '18.189.253.225', 'localhost']
 
 
 # Application definition
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'cruzmv.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cruzmv',
+        'USER': 'cruzmv',
+        'PASSWORD': 'cruzmv',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
